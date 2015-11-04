@@ -1,0 +1,845 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #F0FFFF;
+    width: 100%;
+    margin: 0;
+}
+
+body > header {
+    width: 20em;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: rgba(169, 169, 169, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 1em;
+}
+
+fieldset {
+    border: 0;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+fieldset > fieldset {
+    border:  none;
+    box-shadow: none;
+}
+
+fieldset:nth-child(2) {
+    margin-top: -3em;
+}
+
+fieldset:nth-child(2) > label > input {
+    width: 20%;
+}
+
+fieldset:nth-child(1) > label:nth-child(2n) {
+    background-color: rgba(200,200,200, 0.4);
+}
+
+
+label {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+
+label > span {
+    width: 60%;
+    margin-right: 3em;
+}
+
+label > em {
+    margin-left: 3em;
+}
+fieldset > label:nth-child(6) > input {
+    margin-right: 0em;
+}
+
+textarea {
+    width: 30em;
+    height: 10em;
+}
+
+legend {
+    padding-top: 3em;
+}
+
+img {
+    width: 35em;
+}
+
+#project > label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#project > label:first-of-type,
+#project > label:nth-child(6),
+#project > label:nth-child(7) {
+    display: flex;
+    flex-direction: row;
+}
+#project > label:first-of-type > input,
+#project > label:nth-child(6) > input,
+#project > label:nth-child(7) > input {
+    margin-right: 6em;
+}
+#project > label > input {
+    width: 60%;
+}
+
+#project > fieldset > label {
+    width: 40%;
+    padding: 0.5em;
+}
+
+#project{
+    display: none;
+}
+
+#stage {
+    display: none;
+}
+
+header > h1 {
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4);
+}
+
+nav{
+    font-size: 1.2em;
+}
+
+nav ul li {
+    margin-bottom: 0.2em;
+    list-style-type: none;
+}
+
+nav a {
+    color: #A9A9A9;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #C0C0C0;
+    border-radius: 10px;
+    padding: 0.7em;
+}
+
+main > article > footer:hover {
+    border-radius: 5px 5px 5px 5px;
+    transition: 1s ease-out;
+    background-color: aliceblue;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+main {
+    width: 40em;
+    margin-left: 17em;
+    border-radius: 5px 20px 5px;
+    background-color: aliceblue;
+}
+
+main > article > header p:first-of-type {
+    color: rgba(51, 51, 51, 0.8);
+}
+
+header img{
+    margin: 0.8;
+    margin-left: 0.5em;
+    order: -1;
+    width: 12.5em;
+}
+
+header img:hover {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
+
+img {
+    width: 35em;
+}
+
+.related {
+    width: 28%;
+    margin-left: 1em;
+    padding-right: 1em;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+aside > section {
+    width: 60%;
+    margin-left: 4em;
+}
+
+aside > section + section {
+    width: 60%;
+}
+
+body > footer {
+    font-size: .8em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2em;
+    padding-top: 2em;
+    background-color: #fff;
+}
+
+video {
+  width: 80%    !important;
+  height: auto   !important;
+  padding-left: 3em;
+}
+
+#contact {
+    order: -1;
+    width: 20%;
+    margin-left: 23em;
+}
+
+#about {
+    order: 1;
+    width: 20%;
+}
+
+#search {
+    order: 3;
+}
+
+#credits {
+    order: 2;
+    width: 20%;
+}
+
+#sitemap {
+    order: 4;
+    margin-left: 23em;
+    width: 80%;
+}
+#sitemap ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+}
+
+#sitemap ul li ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#sitemap ul li ul li {
+    margin-left: 1em;
+}
+
+#sitemap ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#feedback{
+    order: 5;
+    margin-left: 90em;
+    padding: 0.5em;
+    border: 0.1em solid;
+}
+
+#feedback:hover{
+    transform: rotate(9000deg);
+    transition: 9500ms;
+}
+
+input {
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.3em;
+}
+
+@media screen and (min-width: 22em){
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #F0FFFF;
+        width: 100%;
+    }
+
+    body > header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(169, 169, 169, 0.8);
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 0.7em;
+        padding-left: 1em;
+    }
+
+    header > h1 {
+        text-shadow: 3px 3px 2px rgba(144, 255, 255, 0.4);
+        font-size: 1em;
+    }
+
+
+    nav ul li {
+        margin-bottom: 1.3em;
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        color: #000;
+        text-decoration: none;
+        transition: 0.5s;
+
+    }
+
+    nav ul li a:hover {
+        background-color: #C0C0C0;
+        border-radius: 10px;
+        padding: 0.7em;
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    main {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 5px 10px 5px;
+        background-color: AliceBlue;
+
+    }
+
+    header img{
+        margin: 0.8em;
+        order: -1;
+        width: 100px;
+        height: 50px;
+    }
+
+    img {
+        width: 19em;
+    }
+
+    .related {
+        width: 100%;
+        margin-left: 0;
+        background-color: AliceBlue;
+        border-radius: 5px 10px 5px;
+
+    }
+
+    aside {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    aside > section {
+        padding-right: 2em;
+    }
+
+    footer {
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #contact {
+        order: -1;
+        width: 40%;
+        margin-left: 0;
+    }
+
+    #about {
+        order: 1;
+        width: 40%;
+    }
+
+    #search {
+        order: 3;
+    }
+
+    #credits {
+        order: 2;
+        width: 20%;
+    }
+
+    #sitemap {
+        order: 4;
+        margin-left: 0;
+        width: 80%;
+    }
+    #sitemap ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #sitemap ul li ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sitemap ul li ul li {
+        margin-left: 0;
+    }
+
+    #sitemap ul {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    #feedback{
+        order: 5;
+        margin-left: 0;
+    }
+
+    #feedback:hover{
+        transform: rotate(9000deg);
+        transition: 9500ms;
+    }
+}
+
+@media screen and (min-width: 31em){
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #F0FFFF;
+        width: 100%;
+    }
+
+    body > header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(169, 169, 169, 0.8);
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 1em;
+    }
+
+
+    header > h1 {
+        text-shadow: 3px 3px 2px rgba(144, 255, 255, 0.8);
+    }
+
+    nav ul li {
+        margin-bottom: 0.7em;
+        list-style-type: none;
+    }
+
+    nav ul li a {
+        color: #000;
+        text-decoration: none;
+        transition: 0.5s;
+
+    }
+
+    nav ul li a:hover {
+        background-color: C0C0C0;
+        border-radius: 5px;
+        padding: 0.3em;
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    main {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 5px 20px 5px;
+        background-color: AliceBlue;
+        padding: 0.5em;
+
+    }
+
+    header img{
+        margin: 0.8em;
+        order: -1;
+        width: 100px;
+        height: 50px;
+    }
+
+    img {
+        width: 19em;
+    }
+
+    .related {
+        width: 100%;
+        margin-left: 0;
+        background-color: AliceBlue;
+        border-radius: 5px 10px 5px;
+        padding: 0.5em;
+
+    }
+
+    aside {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    aside > section {
+        padding-right: 2em;
+    }
+
+    footer {
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #contact {
+        order: -1;
+        width: 40%;
+        margin-left: 0;
+    }
+
+    #about {
+        order: 1;
+        width: 40%;
+    }
+
+    #search {
+        order: 3;
+    }
+
+    #credits {
+        order: 2;
+        width: 20%;
+    }
+
+    #sitemap {
+        order: 4;
+        margin-left: 0;
+        width: 80%;
+    }
+    #sitemap ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #sitemap ul li ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sitemap ul li ul li {
+        margin-left: 0;
+    }
+
+    #sitemap ul {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    #feedback{
+        order: 5;
+        margin-left: 0;
+    }
+
+    #feedback:hover{
+        transform: rotate(9000deg);
+        transition: 9500ms;
+    }
+}
+
+@media screen and (min-width: 50em){
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #F0FFFF;
+        width: 100%;
+    }
+
+    main {
+        width: 40em;
+        margin-left: 17em;
+        padding: 2em;
+        border-radius: 5px 10px 5px;
+        background-color: white;
+        box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
+    }
+
+    .related {
+        width: 70%;
+        margin-left: 17em;
+        box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
+    }
+    body > header {
+        width: 25%;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: rgba(169, 169, 169, 0.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 1em;
+    }
+    footer {
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #contact {
+        order: -1;
+        width: 30%;
+        margin-left: 23em;
+    }
+    #about {
+        order: 1;
+        width: 30%;
+    }
+    #search {
+        order: 3;
+    }
+    #credits {
+        order: 2;
+        width: 30%;
+        margin-left: 23em;
+    }
+    #feedback{
+        order: 5;
+        margin-left: 70em;
+    }
+    #feedback:hover{
+        transform: rotate(9000deg);
+        transition: 9500ms;
+    }
+
+    #sitemap {
+        order: 4;
+        margin-left: 23em;
+        width: 80%;
+    }
+    #sitemap ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+    }
+
+    #sitemap ul li ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sitemap ul li ul li {
+        margin-left: 1em;
+    }
+
+    #sitemap ul {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    aside {
+        margin-left: 20em;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    img {
+        width: 35em;
+    }
+
+}
+
+@media screen and (min-width: 68em){
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: 'Trebuchet MS', sans-serif;
+        background-color: #F0FFFF;
+        width: 100%;
+    }
+
+    main {
+        width: 50%;
+        margin-left: 17em;
+        border-radius: 5px 20px 5px;
+        background-color: AliceBlue;
+        box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
+
+    }
+    .related {
+        width: 20%;
+        margin-left: 1.4em;
+        background-color: AliceBlue;
+        border-radius: 5px 10px 5px;
+    }
+    body > header {
+        width: 20%;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: rgba(169, 169, 169, 0.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding-left: 1em;
+    }
+
+    header img{
+        margin: 0.8em;
+        order: -1;
+        width: 200px;
+    }
+
+    header img:hover {
+        transform: rotate(360deg);
+        transition: 500ms;
+    }
+    footer {
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #contact {
+        order: -1;
+        width: 20%;
+        margin-left: 23em;
+    }
+    #about {
+        order: 1;
+        width: 20%;
+    }
+    #search {
+        order: 3;
+    }
+    #credits {
+        order: 2;
+        width: 20%;
+        margin-left: 0;
+    }
+    #feedback{
+        order: 5;
+        margin-left: 85em;
+    }
+    #sitemap {
+        order: 4;
+        margin-left: 23em;
+        width: 80%;
+    }
+    #sitemap ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+    }
+
+    #sitemap ul li ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sitemap ul li ul li {
+        margin-left: 1em;
+    }
+
+    #sitemap ul {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    img {
+        width: 35em;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    aside > section {
+        width: 40%;
+    }
+
+    aside > section + section {
+        width: 28%;
+    }
+
+    @media screen and (max-height: 23em){
+
+        header > p {
+            display: none;
+        }
+
+        nav{
+            font-size: 1.2em;
+        }
+
+        nav ul li {
+            margin-bottom: 0.1em;
+            list-style-type: none;
+        }
+
+        nav a {
+            color: #A9A9A9;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover {
+            background-color: #C0C0C0;
+            border-radius: 5px;
+            padding: 0.3em;
+        }
