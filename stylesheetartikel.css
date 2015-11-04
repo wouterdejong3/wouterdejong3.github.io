@@ -305,7 +305,7 @@ input {
         bottom: 0;
         left: 0;
         font-size: 0.7em;
-        padding-left: 1em;
+        padding: 1em;
     }
 
     header > h1 {
@@ -342,7 +342,7 @@ input {
 
     main {
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         border-radius: 5px 10px 5px;
         background-color: AliceBlue;
 
