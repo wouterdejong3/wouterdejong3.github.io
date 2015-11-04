@@ -38,7 +38,9 @@ fieldset:nth-child(2) {
 fieldset:nth-child(2) > label > input {
     width: 20em;
 }
-
+fieldset:nth-child(1) > label:nth-child(2n) {
+    background-color: rgba(200,200,200, 0.4);
+}
 label {
     display: flex;
     flex-direction: row;
@@ -708,7 +710,7 @@ input {
     }
 
     main {
-        width: 50%;
+        width: 40%;
         margin-left: 17em;
         border-radius: 5px 20px 5px;
         background-color: AliceBlue;
