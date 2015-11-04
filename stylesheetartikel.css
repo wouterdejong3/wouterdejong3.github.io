@@ -39,11 +39,6 @@ fieldset:nth-child(2) > label > input {
     width: 20em;
 }
 
-fieldset:nth-child(1) > label:nth-child(2n) {
-    background-color: rgba(200,200,200, 0.4);
-}
-
-
 label {
     display: flex;
     flex-direction: row;
