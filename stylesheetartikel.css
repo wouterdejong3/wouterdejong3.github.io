@@ -604,8 +604,8 @@ input {
     }
 
     main {
-        width: 40em;
-        margin-left: 17em;
+        width: 30em;
+        margin-left: 14em;
         padding: 2em;
         border-radius: 5px 10px 5px;
         background-color: white;
@@ -710,8 +710,9 @@ input {
     }
 
     main {
-        width: 40%;
-        margin-left: 17em;
+        width: 40em;
+        padding-left: 3em;
+        margin-left: 14em;
         border-radius: 5px 20px 5px;
         background-color: AliceBlue;
         box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
