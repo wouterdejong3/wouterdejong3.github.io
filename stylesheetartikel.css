@@ -284,6 +284,7 @@ input {
         font-family: 'Trebuchet MS', sans-serif;
         background-color: #F0FFFF;
         width: 100%;
+        margin: 0;
     }
 
     body > header {
@@ -437,6 +438,7 @@ input {
         font-family: 'Trebuchet MS', sans-serif;
         background-color: #F0FFFF;
         width: 100%;
+        margin: 0;
     }
 
     body > header {
@@ -589,6 +591,7 @@ input {
         font-family: 'Trebuchet MS', sans-serif;
         background-color: #F0FFFF;
         width: 100%;
+        margin: 0;
     }
 
     main {
