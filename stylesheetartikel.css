@@ -5,11 +5,11 @@ body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #F0FFFF;
     width: 100%;
-    margin: 2em;
+    margin: 0;
 }
 
 body > header {
-    width: 20em;
+    width: 20%;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -19,7 +19,9 @@ body > header {
     left: 0;
     padding-left: 1em;
 }
-
+img{
+    width: 90%;
+}
 fieldset {
     border: 0;
     border-radius: .5em;
@@ -74,10 +76,6 @@ textarea {
 
 legend {
     padding-top: 3em;
-}
-
-img {
-    width: 35em;
 }
 
 #project > label {
@@ -175,12 +173,8 @@ header img:hover {
     transition: 500ms;
 }
 
-img {
-    width: 35em;
-}
-
 .related {
-    width: 28em;
+    width: 20%;
     margin-left: 1em;
     padding-right: 1em;
 }
@@ -303,6 +297,7 @@ input {
         left: 0;
         font-size: 0.7em;
         padding: 1em;
+        margin: 1em;
     }
 
     header > h1 {
@@ -352,9 +347,6 @@ input {
         height: 50px;
     }
 
-    img {
-        width: 19em;
-    }
 
     .related {
         width: 100%;
@@ -506,10 +498,6 @@ input {
         height: 50px;
     }
 
-    img {
-        width: 19em;
-    }
-
     .related {
         width: 100%;
         margin-left: 0;
@@ -608,7 +596,7 @@ input {
         margin-left: 14em;
         padding: 2em;
         border-radius: 5px 10px 5px;
-        background-color: white;
+        background-color: #F0FFFF;
         box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
     }
 
@@ -618,7 +606,7 @@ input {
         box-shadow: 20px 0px 12px -5px rgba(0,0,0,0.65);
     }
     body > header {
-        width: 25%;
+        width: 20%;
         display: flex;
         position: fixed;
         flex-direction: column;
@@ -693,10 +681,6 @@ input {
         width: 80%;
     }
 
-    img {
-        width: 35em;
-    }
-
 }
 
 @media screen and (min-width: 68em){
@@ -707,11 +691,11 @@ input {
         font-family: 'Trebuchet MS', sans-serif;
         background-color: #F0FFFF;
         width: 100%;
+        margin: 0;
     }
 
     main {
         width: 40em;
-        padding-left: 3em;
         margin-left: 14em;
         border-radius: 5px 20px 5px;
         background-color: AliceBlue;
@@ -720,7 +704,7 @@ input {
     }
     .related {
         width: 20%;
-        margin-left: 1.4em;
+        margin-left: 17em;
         background-color: AliceBlue;
         border-radius: 5px 10px 5px;
     }
@@ -798,9 +782,7 @@ input {
         list-style-type: none;
         text-decoration: none;
     }
-    img {
-        width: 35em;
-    }
+
     aside {
         display: flex;
         flex-direction: row;
