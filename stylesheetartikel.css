@@ -282,7 +282,7 @@ input {
     margin: 0.3em;
 }
 
-@media screen and (min-width: 30em){
+@media screen and (min-width: 14em){
     body {
         display: flex;
         flex-direction: column;
