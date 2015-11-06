@@ -9,7 +9,7 @@ body {
 }
 
 body > header {
-    width: 20em;
+    width: 20%;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -587,7 +587,7 @@ input {
     }
 }
 
-@media screen and (min-width: 40em){
+@media screen and (min-width: 50em){
     body {
         display: flex;
         flex-direction: row;
